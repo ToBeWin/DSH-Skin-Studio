@@ -30,8 +30,10 @@ app.whenReady().then(async () => {
   await delay(350);
   if (!await clickText(window, ['Settings', '设置'])) throw new Error('Settings entry was not found');
   await delay(500);
+  if (!await clickText(window, ['Skin Studio', '皮肤工作室'])) throw new Error('Skin Studio settings section was not found');
+  await delay(260);
   const studio = await window.webContents.executeJavaScript(`document.body.innerText.includes('Skin Studio') || document.body.innerText.includes('皮肤工作室')`);
-  if (!studio) throw new Error('Skin Studio was not rendered in General settings');
+  if (!studio) throw new Error('Skin Studio was not rendered in its settings section');
   const skinCardCount = await window.webContents.executeJavaScript(`document.querySelectorAll('.tobewin-skin-grid .tobewin-skin-card').length`);
   if (skinCardCount !== 11) throw new Error(`Expected 10 built-in skins plus the default card, received ${skinCardCount}`);
   const canvasLayout = await window.webContents.executeJavaScript(`(() => {

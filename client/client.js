@@ -1000,8 +1000,12 @@ window.__ModuleLoader__.load({
           dispose.reverse().forEach((release) => release());
         };
       }, 'dsh-skin-studio: register skins');
-      ctx.slots.inject('settings.general.item', () => ctx.slots.register({
-        name: 'settings.general.item', id: 'tobewin-skin-studio', order: 20, locale: NS,
+      ctx.slots.inject('settings.section', () => ctx.slots.register({
+        name: 'settings.section',
+        id: 'tobewin-skin-studio',
+        order: 17,
+        label: () => ctx.locale.bind(NS)('title'),
+        locale: NS,
         inject: () => ({ locale: ctx.locale, skinStore, canvasStore, actions }),
       }, SkinStudio));
     }
