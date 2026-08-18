@@ -15,7 +15,17 @@ Vibrant, switchable skins for [DeepSeek Harness](https://github.com/deepseek-ai/
 
 DSH Skin Studio registers themes through Harness's public browser theme service. It does not fork, patch, embed, or modify DeepSeek Harness.
 
-## See it in Harness
+## See it in Harness / 应用效果
+
+The selected wallpaper, palette, translucent surfaces, sidebar, and composer are applied together across the real Harness workspace—not just inside a settings preview.
+
+选定的背景图、配色、半透明表面、侧边栏和输入框会共同应用到真实 Harness 工作区，而不只是显示在设置预览中。
+
+<p align="center">
+  <img src="docs/images/skin-studio-applied.png" alt="A custom DSH Skin Studio wallpaper and palette applied across the DeepSeek Harness workspace" width="96%">
+</p>
+
+### Custom Canvas editor / 自定义画布编辑器
 
 <p align="center">
   <img src="docs/images/skin-studio.png" alt="Custom wallpaper framing and palette controls in DSH Skin Studio" width="92%">
