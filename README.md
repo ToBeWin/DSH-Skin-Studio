@@ -1,10 +1,25 @@
-# DSH Skin Studio
+<h1 align="center">DSH Skin Studio</h1>
 
-[中文](#中文) | English
+<p align="center">Turn DeepSeek Harness into a workspace that feels unmistakably yours.</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/@tobewin/dsh-skin-studio"><img src="https://img.shields.io/npm/v/@tobewin/dsh-skin-studio?color=2563eb&label=npm" alt="npm version"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-111827" alt="MIT license"></a>
+  <img src="https://img.shields.io/badge/images-local--only-0f766e" alt="Images stay local">
+  <img src="https://img.shields.io/badge/skins-10%20built--in-7c3aed" alt="Ten built-in skins">
+</p>
+
+<p align="center"><a href="#quick-start">Quick start</a> · <a href="#中文">中文说明</a> · <a href="https://github.com/ToBeWin/DSH-Plugin-Market">All ToBeWin plugins</a></p>
 
 Vibrant, switchable skins for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness).
 
 DSH Skin Studio registers themes through Harness's public browser theme service. It does not fork, patch, embed, or modify DeepSeek Harness.
+
+## See it in Harness
+
+<p align="center">
+  <img src="docs/images/skin-studio.png" alt="Custom wallpaper framing and palette controls in DSH Skin Studio" width="92%">
+</p>
 
 ## Included skins
 
@@ -33,13 +48,13 @@ Alongside the included skins, **Custom Canvas** lets you create one personal, ap
 
 The image and palette remain on this device in browser storage (IndexedDB); no image is uploaded or sent over the network.
 
-## Install
+## Quick start
 
 ```bash
-dsh plugin install @tobewin/dsh-skin-studio
+dsh plugin --profile web add @tobewin/dsh-skin-studio
 ```
 
-Restart DeepSeek Harness, then open **Settings → General → Skin Studio**. Changes apply immediately. The selection is remembered locally in the browser; choose **Default appearance** to return to the normal Harness light/dark/system preference.
+Restart DeepSeek Harness, then open **Settings → Skin Studio**. Changes apply immediately. The selection is remembered locally in the browser; choose **Default appearance** to return to the normal Harness light/dark/system preference.
 
 ## Compatibility and privacy
 
@@ -105,10 +120,10 @@ The source tree is intentionally small: the host entry is inert, while `client/c
 ### 安装与使用
 
 ```bash
-dsh plugin install @tobewin/dsh-skin-studio
+dsh plugin --profile web add @tobewin/dsh-skin-studio
 ```
 
-重启 DeepSeek Harness 后，在 **设置 → 通用 → 皮肤工作室** 中选择即可即时生效。选择会保存在浏览器本地；点击「默认外观」即可恢复 Harness 原有的浅色、深色或跟随系统设置。
+重启 DeepSeek Harness 后，在 **设置 → 皮肤工作室** 中选择即可即时生效。选择会保存在浏览器本地；点击「默认外观」即可恢复 Harness 原有的浅色、深色或跟随系统设置。
 
 ### 隐私与解耦
 
